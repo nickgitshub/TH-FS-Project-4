@@ -11,6 +11,7 @@
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
+  --font-size-very-large: 100px;
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
@@ -20,7 +21,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Spicy Rice', sans-serif;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-color: #D67722;
 }
 
 li, ol, ul {
@@ -35,17 +37,23 @@ li, ol, ul {
   display: inline-block;
 }
 
-h2 {
+h1{
+  font-family: 'Spicy Rice';
   margin: 0;
-  text-transform: uppercase;
-  font-size: var(--font-size-large);
-  margin: 0;
+  font-size: var(--font-size-very-large);
 }
 
-h1 {
+h2 {
+  font-family: 'Pacifico', sans-serif;
+  margin: 0;
+  text-transform: lowercase;
+  font-size: var(--font-size-large);
+}
+
+/*h1 {
   font-size: 30px;
 }
-
+*/
 button {
   margin: 6px;
   border: 1px solid transparent;
@@ -70,7 +78,7 @@ button {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  max-height: 900px;
+  max-height: 650px;
   text-align: center;
 }
 
@@ -111,7 +119,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #4ac0d5;
+  background-color: #3a3f58;
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -128,6 +136,7 @@ button {
 .keyrow {
   display: flex;
   justify-content: center;
+  color: #3a3f58;
 }
 
 .chosen {
@@ -138,7 +147,7 @@ button {
 }
 
 .wrong {
-  background: #f7a964;
+  background: #FFCA9A;
   color: #FFFFFF;
 }
 
