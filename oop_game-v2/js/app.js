@@ -2,16 +2,10 @@
  * Project 4 - OOP Game App
  * app.js */
 
-//initiate the game
-const game = new Game();
-
-//creates a list of phrases that will be ranodom selected
-game.createPhrases()
-
 //listen to the start button and starts the game when clicked
 startButton = document.getElementById('btn__reset')
 startButton.addEventListener('click', (e)=> {
-	//hides the overlay and selects a random phrase to be used for the game
+	game = new Game();
 	game.startGame();
 })
 
@@ -38,6 +32,7 @@ document.addEventListener('keypress', (e)=>{
 
 	//if the overlay is present(start, lose, or win screen), you can press 'Enter' to start a new game
 	}else if (keyPressed === 'Enter'){
+		game = new Game();
 		game.startGame();
 	}
 })

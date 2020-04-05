@@ -35,6 +35,7 @@
  			this.gameReset()
  		}
 
+ 		this.createPhrases();
  		divOverlay.style.display = 'None'
  		this.activePhrase = this.getRandomPhrase();
  		this.activePhrase.addPhraseToDisplay();
@@ -76,7 +77,8 @@
  		const remainingTries = document.querySelectorAll('[src="images/liveHeart.png"]')
  		const remainingTriesIndex = remainingTries.length-1
 
- 		if(remainingTriesIndex > -1){
+ 		if(this.missed < 4){
+ 			this.missed += 1
  			remainingTries[remainingTriesIndex].src="images/lostHeart.png"
  		}else{
  			this.gameOver(false);
@@ -124,7 +126,6 @@
 
  		//resets the tries images to full heart pictures (liveHeart.png)
  		for (let t of allTries){
- 			console.log(t)
  			t.src="images/liveHeart.png";
  		}
  	}
