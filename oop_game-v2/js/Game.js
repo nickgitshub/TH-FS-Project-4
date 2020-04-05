@@ -95,10 +95,10 @@
  		//changes the h1 message depending on the outcome of the game
  		if(gameWon === true){
  			divOverlay.className = 'win';
- 			divOverlay.querySelector('h1').innerText = "By golly, you did it!";
+ 			divOverlay.querySelector('h1').innerText = "By the bear of Zeus, you did it!";
  		}else{
  			divOverlay.className = 'lose';
- 			divOverlay.querySelector('h1').innerText = "That was not impressive.";
+ 			divOverlay.querySelector('h1').innerText = "Stay classy by trying again.";
  		}
 
  		//Give the button on div overlay a 'Play Again?' message
