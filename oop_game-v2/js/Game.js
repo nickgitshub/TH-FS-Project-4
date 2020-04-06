@@ -13,7 +13,7 @@
 
  	//creates the phrases list that will be randomly cycled through each time a game is started.
  	createPhrases(){
- 		const samplePhrases = ["I love lamp", "You stay classy San Diego", "Great Odens Raven", "By the beard of Zeus", "Cannon ball!"]
+ 		const samplePhrases = ["I love lamp", "You stay classy San Diego", "Great Odens Raven", "By the beard of Zeus", "Cannon ball"]
  		for (let p of samplePhrases){
  			const newPhrase = new Phrase(p)
  			this.phrases.push(newPhrase)
